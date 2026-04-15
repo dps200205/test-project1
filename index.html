@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2026 dps200205. All rights reserved. -->
+<html lang="zh-CN">
+<head>
+  <meta name="author" content="dps200205">
+  <meta name="copyright" content="Copyright (c) 2026 dps200205. All rights reserved.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>窦佩松 - 个人主页</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#skills">技能</a></li>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" title="切换主题">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="avatar-wrapper">
+                <div class="avatar">P</div>
+            </div>
+            <h1 class="hero-title">你好，我是 <span class="highlight">窦佩松</span></h1>
+            <p class="hero-subtitle">全栈开发者 | AI 爱好者 | 创意工程师</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">查看项目</a>
+                <a href="#contact" class="btn btn-outline">联系我</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>我是一名热衷于技术创新的全栈开发者，擅长将复杂的想法转化为优雅的代码实现。</p>
+                    <p>在前端领域，我熟练使用 React、Vue 等主流框架；在后端领域，我精通 Node.js、Python 等技术栈。</p>
+                    <p>我相信好的代码不仅要能运行，更要有美感和可维护性。</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" id="statYears">0</span>
+                        <span class="stat-label">年经验</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="statProjects">0</span>
+                        <span class="stat-label">个项目</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="statTech">0</span>
+                        <span class="stat-label">项技术</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">技能</h2>
+            <div class="skills-grid" id="skillsGrid"></div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">项目作品</h2>
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="你的名字" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="你的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="你的留言..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> 发送消息
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>peisongdou@example.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/peisongdou</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>中国</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 窦佩松. All rights reserved.</p>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="js/app.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
